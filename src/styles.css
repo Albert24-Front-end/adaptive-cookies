@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url('./assets/fonts/Steppe-Book.ttf');
+}
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url('./assets/fonts/Steppe-ExtraBold.ttf');
+}
+body {
+    background-color: #5243F4;
+    font-family: 'Steppe-Book', sans-serif;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.button {
+    background-color: white;
+    border-radius: 60px;
+    width: 178px;
+    height: 58px;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: #5243F4;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.button:hover:not(:disabled) {
+    background-color: #eeeeee;
+}
+.button.violet {
+    background-color: #5243F4;
+    color: white;
+    font-size: 18px;
+}
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #343434;
+}
+.button.violet:hover:not(:disabled) {
+    background-color: #3b2cd8;
+}
+ .container h2 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    line-height: 100%;
+    text-align: center;
+}
+/* ctrl + C - остановка терминала / перезапуск терминала при зависании работы */
+/*ng serve --open - включение терминала - 3е действие*/
+/* npm i - добавление удаленного функционала node_modules и восстан-ие работы сайта - 2е действие */
+/*cd /d C:\Users\User\Desktop\ITLogy\cookies - указать путь к файлу - 1е действие*/
